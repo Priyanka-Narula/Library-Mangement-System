@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+            grid-gap: 20px; /* Adjust the gap between grid items */
+        }
+        .grid-item {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Content 1</div>
+        <div class="grid-item">Content 2</div>
+        <div class="grid-item">Content 3</div>
+        <!-- Add more grid items as needed -->
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input Placeholder</title>
+</head>
+<body>
+    <form>
+        <!-- Your other form fields here -->
+        <label for="birthday">Select a date:</label>
+        <input type="date" id="birthday" name="birthday" class="date-input" placeholder="Today's date" readonly>
+        <!-- Your other form fields here -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // Get today's date
+        var today = new Date();
+
+        // Format today's date as "YYYY-MM-DD" for use in the placeholder
+        var yyyy = today.getFullYear();
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        var dd = String(today.getDate()).padStart(2, '0');
+        var todayFormatted = yyyy + '-' + mm + '-' + dd;
+
+        // Set today's date as the placeholder for the date input field
+        document.getElementById('birthday').setAttribute('placeholder', todayFormatted);
+    </script>
+<div class="container" style="width:90%; margin: auto; padding: 10px; border: 2px solid black;box-sizing: border-box;">
+    <br>
+    <h3 style="text-align: center;">Edit Book Details</h3>
+        <hr>
+    <div class="row" >
+        
+            <form id="editbook", name="editbook" , action="/editbook" , method="post" >
+                <input type="number" name="exe_book" placeholder="Book ID Which You Want To Edit" , required>
+                <input type="text" name="new_author" placeholder="Author Name" , required>
+                <input type="text" name="new_title" placeholder="Book Title" ,required>
+                <input type="number" name="new_sec_id" placeholder="Section ID" ,required>
+                <input type="text" name="new_content" placeholder="Book Content" ,required>
+                <input type="text" name="new_image_url" placeholder="Book Cover Image" ,required>
+                <input type="number" name="new_publish_year" placeholder="Publish Year" ,required>
+                <input type="text" name="new_subtitle" placeholder="Subtitle">
+                <input type="submit" value="Update">
+            </form> 
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
+

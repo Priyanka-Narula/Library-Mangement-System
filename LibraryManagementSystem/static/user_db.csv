@@ -1,0 +1,4 @@
+u_id,username,first_name,last_name,password,type
+1,Admin,abc,xyz,1234,admin
+2,Miyu123,Miyu,Narula,1234,user
+3,priyanka,Priyanka,Narula,1234,user

@@ -1,0 +1,122 @@
+*
+{
+    margin:0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#main,#canvas
+{
+    border: 2px solid black
+}
+#canvas
+{
+    width:80%;
+    height:700px;
+    margin:auto;
+}
+.backgroundimage {
+    background-image: url(/static/Book\ image.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-body
+{  
+    background-color: rgba(255, 255, 255, 0.8);
+    border:2px solid rgb(221, 216, 220);
+    height:auto;
+    margin:auto;
+    width:300px;
+    margin-top:100px;
+    padding:5px;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+#form-body1
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgb(221, 216, 220);
+    height:auto;
+    margin:auto;
+    width:370px;
+    margin-top:100px;
+    padding:5px;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+
+}
+#form-body2
+{
+    border:2px solid rgb(221, 216, 220);
+    height:500px;
+    margin:auto;
+    width:370px;
+    margin-top:100px;
+    padding:5px;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+#navbarSupportedContent
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+}
+
+#search
+{
+    width: 400px;
+    align-items: right;
+}
+#admin_dash
+{
+    
+    width:700px
+}
+.headings
+{
+    margin:3px;
+    padding-left:5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:lighter;
+    
+}
+.card_title
+{
+    margin:3px;
+    padding-left:5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.card_text
+{
+    margin:3px;
+    padding-left:5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:medium
+}
+.table_headings
+{
+    margin:3px;
+    padding-left:5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:medium
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust row width as needed */
+    grid-gap: 20px; /* Adjust the gap between grid items */
+}
+.grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
